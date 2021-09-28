@@ -17,3 +17,6 @@ In our project, by using the climate data from IBM PAIRS and The Weather Company
 run ```dataPropcessing.ipynb``` first. This will first clean the original Anophelines Dataset, and then request climate for each location according to its latitude and longitude.<br/>
 
 run ```Network.ipynb``` to train the model and visualize the result <br/>
+
+# Important Note
+The climate data from IBM Cleaned Historical Observations is ideal to our problem. Our original plan was to train our network using data from ICHO. However, we only have a trial key and can get about 250 data. So we had to request more data from ERA5. We used the data from ICHO to pre-train our network and then train using ERA5. The result is that: the pre-train model can get reasonable result but the full-train model shows un-reseanal reasonable when the Accuracy is high. We need to investigate this problem in the future.
