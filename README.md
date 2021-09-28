@@ -11,3 +11,9 @@ In our project, by using the climate data from IBM PAIRS and The Weather Company
 ```data_ICHO```: Climate Data from [IBM Cleaned Historical Observations](IBM Cleaned Historical Observations)  <br/>
 ```data_ERA5```: Climate Data from IBM PAIRS, dataset ID: 190. Check details [here](https://github.com/academic-initiative/research-challenge-2021/blob/main/jupyter-platform/EIS%20DataSet%20Report%20July%202021.pdf) <br/>
 ```future_climate```: Future climate estimation from [here](https://worldclim.org/data/cmip6/cmip6_clim2.5m.html). We choose BCC-CSM2-MR and ssp126. Other versions will also work
+
+# Run the code
+
+run ```dataPropcessing.ipynb``` first. This will first clean the original Anophelines Dataset, and then request climate for each location according to its latitude and longitude.<br/>
+
+run ```Network.ipynb``` to train the model and visualize the result <br/>
